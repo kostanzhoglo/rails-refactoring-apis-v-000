@@ -32,4 +32,12 @@ RSpec.configure do |config|
   end
 end
 
-WebMock.disable_net_connect!(allow_localhost: true)
+
+
+# THIS IS BAD INSTRUCTION. GIVES WACKY ERROR.
+# WebMock.disable_net_connect!(allow_localhost: true)
+
+
+WebMock.allow_net_connect!
+# Just tested both out with $ learn.  I pass all tests with both.
+# Life is weird.
